@@ -1,0 +1,221 @@
+@charset "utf-8";
+/*
+   stylesheet
+   Author: Jovan Petković
+   Date: 
+   
+   Filename: styles.css
+*/
+
+@font-face {
+  font-family: myFont;
+  src: url(JosefinSans-Regular.ttf);
+}
+
+/* Main Structural Styles */
+
+body 
+{
+    background-color: rgb(210,210,210);
+	color: saddlebrown;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+} 
+
+footer{
+	text-align: center;
+	background-color:rgba(30,20,40,0.2);
+	color: hsla(349,83%,21%,0.88);
+	text-transform:lowercase;
+	font-weight: bold;
+	font-size: 1.07rem;
+	line-height: 2rem;
+
+}
+a:link{
+	text-decoration: none;
+}
+
+article{
+	text-align: justify;
+	
+}
+/* Heading Styles */
+
+h1{
+	font-family: 'Open Sans', Helvetica, sans-serif;
+/*    color: hsl(228,83%,30%);*/
+    font-weight:normal;
+	line-height: 2em;
+	font-size: 25px;
+	margin: 1px 0;
+
+}
+
+h1.upper
+{
+    text-transform: uppercase;	
+}
+
+h2{
+	font-family: 'Open Sans', Helvetica, sans-serif;
+    color: hsl(228,83%,30%);
+    font-weight:normal;
+	line-height: 2em;
+	font-size: 20px;
+	margin: 1px 0;
+}
+
+h3{
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	color: hsl(228,83%,30%);
+    font-weight:normal;
+	line-height: 2em;
+	font-size: 20px;
+	margin: 1px 0;
+}
+
+/* Blockquote Styles */
+
+blockquote {
+	font-family: 'DejaVu Sans Mono',DejaVu, monospace;
+	font-size: 1.3em;
+    background-color: rgb(228,213,140);
+	color:hsla(0,0%,0%,0.77);
+	padding-left: 9px;
+	padding-right: 9px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+blockquote::before {
+	content: "\201C";
+	display: block;
+	text-align: left;
+}
+
+blockquote::after {
+	content: "\201D";
+	display: block;
+	text-align:right;
+}
+
+
+/* Navigation Styles */	
+
+.nav-list {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    background-color: dimgray;
+    overflow: auto;
+    margin: 0;
+    padding:0 0 0 11px;
+}
+  
+.nav-list li {
+	line-height:30px;
+    width: 50%;
+	float:left;
+	text-align: center;
+    list-style: none;
+
+}
+
+.nav-list li:hover {
+	background: #838383;
+}
+
+.nav-list li.active {
+    background-color: rgba(0,0,0,0.63);
+    color: #37A62F;
+}
+
+.nav-list a.active {
+    color: rgba(0,0,0,0.63);
+	font-weight: bold;
+}
+
+.nav-list li a {
+	
+    text-decoration: none;
+    padding: 0px 0px;
+    color: white;
+}
+  
+.nav-list li a:hover {
+    color:rgba(0,0,0,0.63);
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.nav-list li a:link {
+    color:rgb(134,212,221);
+	font-weight: bold;
+}
+
+.nav-list li a:visited {
+    color:rgb(125,203,83);
+	font-weight: bold;
+}
+
+/* Paragraph Styles */
+
+p
+{
+	font-size: 20px;
+    color: hsla(108,57%,32%,1.00);
+	margin: 10px 5px 20px 15px;
+}
+
+
+/* List Styles */
+
+dd {
+	display: block;
+	padding-right: 100px;
+	text-align: justify;
+
+}
+
+ul{
+	list-style-image: url(bulletin.png);
+	margin: 0 0 15px 0;
+	text-align: justify;
+}
+
+/* Image Styles */
+
+img.header{
+	width: 100%;
+	height: 100px;
+	object-fit:cover;
+	object-position: 0% 35%;
+}
+img.header:hover{
+	filter: grayscale(100%);
+}
+
+/*ID Styles*/
+
+#paragraph_05d{
+	font-family: myFont;
+	font-size: 1.5em;
+	color: rgb(186,8,11);
+    background-color:rgba(243,200,19,0.90);
+	padding-left: 5px;
+}
+
+#article_class06{
+	font-family: 'Open Sans',Helvetica, cursive;
+	margin-top: 7px;
+	padding-left: 9px;
+	padding-right: 20px;
+	color: black;
+	font-size: 25px
+}
+
+dl{
+	border-bottom: solid;
+	margin:0 0 10px 0;
+	padding-bottom:0;
+}
